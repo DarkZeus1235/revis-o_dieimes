@@ -23,10 +23,12 @@
             <h1>Lista de Logins</h1>
             <table class="table table-striped">
                 <tr>
+                    <th>ID</th>
                     <th>Nome</th>
                     <th>Email</th>
                     <th>Senha</th>
                     <th>Usuário</th>
+                    <th>Funcionalidades:</th>
                     <th>Funcionalidades:</th>
                 </tr>
                 <tr>
@@ -34,11 +36,13 @@
                         while($logins = $retorno_consulta -> fetch_assoc()){
                        ?>
                        <tr>
+                        <td><?php echo $logins['id_cadastro'];?></td>
                         <td><?php echo $logins['nome'];?> </td>
                         <td><?php echo $logins['email'];?> </td>
                         <td><?php echo $logins['senha'];?> </td>
                         <td><?php echo $logins['username'];?></td>  
                         <td><a class="btn btn-danger" href="deletar.php?codigo_cadastro=<?php echo $logins['id_cadastro'];?>">Deletar</a></td>
+                        <td><a class="btn btn-primary" href="alterar.php">Alterar</a>
                     </tr>
                     <?php
                     }
@@ -47,7 +51,7 @@
                     ?>
                 </tr>
             </table>
-            <a class="btn btn-warning" href="index.php">Voltar para Início</a>
+            <a class="btn btn-warning" href="cadastro.php">Voltar para Cadastro</a>
         </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

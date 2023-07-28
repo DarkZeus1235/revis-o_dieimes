@@ -40,19 +40,19 @@ if (isset($_GET['codigo_cadastro'])) {
     <div class="container">
         <h1>Tela de Exclusão de Cadastro</h1>
         <h1>ID do Cadastro:
-            <?php echo $logins['id_cadastro'];?>
+            <?php echo $logins['id_cadastro']?>
         </h1>
         <p>Nome Cadastrado:
-            <?php echo $logins['nome'];?>
+            <?php echo $logins['nome']?>
         </p>
         <p>Email Cadastrado:
-            <?php echo $logins['email'];?>
+            <?php echo $logins['email']?>
         </p>
         <p>Senha:
-            <?php echo $logins['senha'];?>
+            <?php echo $logins['senha']?>
         </p>
         <p>Usuário Cadastrado:
-            <?php echo $logins['username']; ?>
+            <?php echo $logins['username'] ?>
         </p>
 
         <form action="" method="post">

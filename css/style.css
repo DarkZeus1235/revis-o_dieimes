@@ -115,7 +115,7 @@ body {
     cursor: pointer;
     margin-top: 8px;
   }
-.signup-container input[id="consultar"]{
+.signup-container input[class="btn btn-primary"]{
   width: 265px;
   background-color: blue;
   color: white;
@@ -124,6 +124,6 @@ body {
   border-radius: 3px;
   cursor: pointer;
 }
-.signup-container input[id="consultar"]:hover {
+.signup-container input[class="btn btn-primary"]:hover {
   background-color: blue;
 }
