@@ -1,11 +1,11 @@
 <?php
         
-        $hostname = "localhost";
-        $bancodedados = "revisao_dieimes";
+        $host = "localhost";
         $usuario = "JP";
         $senha = "julianacarla1";
+        $banco = "revisao_dieimes";
 
-        $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
+        $mysqli = new mysqli($host, $usuario, $senha, $banco);
         if ($mysqli->connect_errno){
             echo "Falha ao conectar: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
         }else

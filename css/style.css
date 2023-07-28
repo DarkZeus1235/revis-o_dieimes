@@ -95,7 +95,7 @@ body {
     background-color: #45a049;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 780px) {
     .container {
       padding: 20px;
     }
@@ -104,3 +104,26 @@ body {
       width: 100%;
     }
   }
+
+  .signup-container input[type="reset"] {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+.signup-container input[id="consultar"]{
+  width: 265px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.signup-container input[id="consultar"]:hover {
+  background-color: blue;
+}
