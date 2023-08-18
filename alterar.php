@@ -16,14 +16,12 @@ if (isset($_POST['bt_email'])) {
         senha = '$senha',
         nome = '$nome',
         username = '$username',
-        endereco = '$endereco',
+        endereco = '$endereco'
         WHERE id_cadastro = '$id_cadastro_alterar'";
 
-        var_dump($sql_alterar);
 
     $mysqli_alterar = $mysqli->query($sql_alterar) or die($mysqli->error);
 
-    //var_dump($id_cadastro_alterar);
 }
 
 if (isset($_POST['bt_id'])) {
@@ -47,6 +45,7 @@ if (isset($_POST['bt_id'])) {
     <div class="signup-container">
         <h2>Alterar Cadastro</h2>
         <form action="" method="POST">
+            <label for="">ID</label>
             <input type="text" name="bt_id_alterar" value="<?php 
             if (isset($consultar['id_cadastro'])) {
             echo $consultar['id_cadastro'];

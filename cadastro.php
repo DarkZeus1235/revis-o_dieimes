@@ -4,7 +4,8 @@ include('conexao.php');
 if (isset($_POST['bt_nome'])) {
     /*----------------------------------*/
     $email = $_POST['bt_email'];
-    $senha = $_POST['bt_senha'];
+    //$senha = $_POST['bt_senha'];
+    $senha = password_hash ($_POST['bt_senha'], PASSWORD_DEFAULT);
     $nome = $_POST['bt_nome'];
     $username = $_POST['bt_username'];
     $endereco = $_POST['bt_endereco'];
@@ -24,7 +25,7 @@ if (isset($_POST['bt_nome'])) {
 <body>
     <div class="signup-container">
         <h2>Cadastro</h2>
-        <form action="login.php" method="POST">
+        <form action="#" method="POST">
             <input type="email" name="bt_email" placeholder="Email" required>
             <input type="password" name="bt_senha" placeholder="Senha" required>
             <input type="text" name="bt_nome" placeholder="Nome Completo" required>
